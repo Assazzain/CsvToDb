@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "YNt0CN5n7CIuW/YrwV7H1iE7WWG52mKYo+XRJpW7WC8=",
+  "Source": "csv-to-database",
+  "BasePath": "_content/csv-to-database",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
