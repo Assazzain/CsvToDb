@@ -240,8 +240,8 @@ namespace csv_to_database.Services
 
                 foreach (var dto in productPriceDTOs)
                 {
-                    var query = "INSERT INTO ProductPrice (ProductId, PriceDate, BasePrice, RpaId, PriceMonth1, PriceMonth2, ChangeMonth1, ChangeMonth2, Choice, ConcurrencyStamp, CreatedAt, UpdatedAt, IsDeleted, DeletedAt) " +
-                                "VALUES (@ProductId, @PriceDate, @BasePrice, @RpaId, @PriceMonth1, @PriceMonth2, @ChangeMonth1, @ChangeMonth2, @Choice, @ConcurrencyStamp, @CreatedAt, @UpdatedAt, @IsDeleted, @DeletedAt)";
+                    var query = "INSERT INTO ProductPrice (ProductId, PriceDate, BasePrice, RpaId, PriceMonth1, PriceMonth2, PriceMonth3, ChangeMonth1, ChangeMonth2, ChangeMonth3, Choice, ConcurrencyStamp, CreatedAt, UpdatedAt, IsDeleted, DeletedAt) " +
+                                "VALUES (@ProductId, @PriceDate, @BasePrice, @RpaId, @PriceMonth1, @PriceMonth2, @PriceMonth3, @ChangeMonth1, @ChangeMonth2, @ChangeMonth3, @Choice, @ConcurrencyStamp, @CreatedAt, @UpdatedAt, @IsDeleted, @DeletedAt)";
 
                     await connection.ExecuteAsync(query, dto);
                 }
