@@ -60,7 +60,7 @@ namespace csv_to_database.Services
 
                         BasePriceCSVList.Add(new BasePriceCSV
                         {
-                            Date = DateTime.Parse(values[columnIndices[nameof(BasePriceCSV.Date)]]),
+                            Date = DateTime.ParseExact(values[columnIndices[nameof(BasePriceCSV.Date)]], "dd/MM/yyyy", CultureInfo.InvariantCulture),
                             MBP = double.Parse(values[columnIndices[nameof(BasePriceCSV.MBP)]], CultureInfo.InvariantCulture),
                             MBB = double.Parse(values[columnIndices[nameof(BasePriceCSV.MBB)]], CultureInfo.InvariantCulture),
                             CPAP = double.Parse(values[columnIndices[nameof(BasePriceCSV.CPAP)]], CultureInfo.InvariantCulture),
